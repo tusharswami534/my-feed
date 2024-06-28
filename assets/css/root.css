@@ -1,3 +1,14 @@
 :root{
+    --fs-sm:12px;
+    --fs-md:16px;
+    --fs-lg:18px;
+    --fs-xl:36px;
+
+
+
+    /* color  */
+    --primary:#666666;
+    --secondary:#1A9FFF;
+    --null:#F8F8F8;
     
 }

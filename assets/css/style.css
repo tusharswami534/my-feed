@@ -64,3 +64,50 @@
     width: 100%;
     border: 1px solid #0000001A
 }
+
+.follow-box {
+    max-width: 329px;
+    width: 100%;
+}
+
+.follow-text {
+    font-family: Poppins;
+    font-size: var(--fs-lg);
+    color: black;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+
+}
+
+.fill {
+    font-family: Poppins;
+    font-size: var(--fs-lg);
+    color: var(--primary);
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+
+}
+
+.most-like {
+    font-family: Poppins;
+    font-size: var(--fs-lg);
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--primary);
+
+
+}
+.logo-profile{
+    margin-bottom: 16px;
+}
+.mt-39{
+    margin-top: 39px;
+}
+.mt-22{
+    margin-top: 22px;
+}
+.ml-17{
+    margin-left: 17px;
+}

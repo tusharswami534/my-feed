@@ -13,10 +13,63 @@
 </head>
 
 <body>
-    <section class="bg-color">
+    <header class="bg-sh p-3">
+        <nav>
+            <div class=" container  d-flex align-items-center justify-content-between">
+                <div class="d-flex">
+                    <div class="d-flex d-block d-lg-none">
+                        <div class="menubar">
+                            <label for="iconbox">
+                                <span class="label">
+                                    <span class="line"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                </span>
+                            </label>
+                            <input type="checkbox" hidden id="iconbox">
+                            <ul class=" d-flex p-0 m-0 menu-list">
+                                <li><a href="" class="feed">Feed</a></li>
+                                <li><a href="" class="wallet">Wallet</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center ">
+                        <img src="./assets/img/png/logo.png" alt="logo" class="ms-2 ms-lg-0 logo-width">
+                        <div class="d-flex align-items-center justify-content-center gap-3">
+                            <p class="nft ms-lg-2 ms-1 mb-0">NFTsee</p>
+                            <ul class="d-flex gap-3 menu-list mb-0 ps-0 ">
+                                <li><a href="" class="feed">Feed</a></li>
+                                <li><a href="" class="wallet">Wallet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-lg-4 gap-2">
+                    <div class="d-lg-block d-none">
+                        <input type="search" placeholder="Search here" class="sarch">
+                    </div>
+                    <div class="d-lg-none d-block">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <input type="checkbox" id="toggle" hidden>
+                    <label for="toggle" class="toogle-btn">
+                        <span class="button"></span>
+                    </label>
+                    <img src="assets/img/png/logo-profile.png" alt="header-img" class="img-width">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="bg-color mt-5">
         <div class="container">
-            <div class="row ">
-                <div class="col-8 bg-white">
+            <div class="row flex-column-reverse flex-lg-row">
+                <div class="col-lg-8 col-12 bg-white">
                     <div class="box p-18">
                         <div class="profile-header d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center gap-2">
@@ -45,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-12">
                     <div class="box-2">
                         <p class="mb-3  fill">Filters</p>
                         <div class="input flex-column d-flex">
@@ -64,7 +117,7 @@
                             </div>
                         </div>
                         <p class="mb-0 fill mt-39">Suggestions for you</p>
-                        <div class="follow-box mt-22" >
+                        <div class="follow-box mt-22">
                             <div class="logo-profile d-lg-flex justify-content-between  align-items-center ">
                                 <div class="d-flex align-items-center">
                                     <a class="text-decoration-none" href="#">
@@ -134,7 +187,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 bg-white">
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-12 bg-white">
                     <div class="box p-18">
                         <div class="profile-header d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center gap-2">
@@ -154,7 +209,7 @@
 
                             <div class="max-width-889 d-flex align-items-center justify-content-center bg-color">
 
-                                <img class="" src="assets/img/png/post-2.png" alt="">
+                                <img class="w-100-lg" src="assets/img/png/post-2.png" alt="">
                             </div>
 
                             <div class="svg  mt-3">
@@ -169,7 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 bg-white">
+                <div class="col-lg-8 col-12 bg-white">
                     <div class="box p-18">
                         <div class="profile-header d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center gap-2">
@@ -198,7 +253,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 bg-white">
+                <div class="col-lg-8 col-12 bg-white">
                     <div class="box p-18">
                         <div class="profile-header d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center gap-2">
@@ -218,7 +273,7 @@
 
                             <div class="max-width-889 d-flex align-items-center justify-content-center bg-color">
 
-                                <img class="" src="assets/img/png/post-4.png" alt="">
+                                <img class="w-100-lg" src="assets/img/png/post-4.png" alt="">
                             </div>
 
                             <div class="svg  mt-3">
@@ -234,6 +289,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url(./root.css);
-*{
+
+* {
     text-decoration: none !important;
     list-style-type: none !important;
 }
 
 .col-lg-8 {
-    border: 1px solid #00000033;
+
     margin-bottom: 31px;
 
+}
+
+.border-color {
+    border: 1px solid #00000033;
 }
 
 .comment {
@@ -27,7 +32,7 @@
 .post {
     background-color: transparent;
     border: none;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: var(--primary);
     font-weight: 400;
     line-height: 27px;
@@ -47,7 +52,7 @@
 .input-comment {
     outline: none;
     border: none;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: var(--fs-lg);
     font-weight: 400;
     line-height: 27px;
@@ -64,7 +69,7 @@
 }
 
 .profile-name {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: var(--fs-lg);
     font-weight: 400;
     line-height: 27px;
@@ -87,7 +92,7 @@
 }
 
 .follow-text {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: var(--fs-lg);
     color: black;
     font-weight: 400;
@@ -97,7 +102,7 @@
 }
 
 .fill {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: var(--fs-lg);
     color: var(--primary);
     font-weight: 400;
@@ -107,7 +112,7 @@
 }
 
 .most-like {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: var(--fs-lg);
     font-weight: 400;
     line-height: 27px;
@@ -182,12 +187,9 @@
     justify-content: end;
 }
 
-a {
-    text-decoration: none;
-}
 
 .nft {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: var(--fs-xl);
     font-weight: 700;
     line-height: 54px;
@@ -202,7 +204,7 @@ a {
 
 .wallet,
 .feed {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: var(--fs-18);
     font-weight: 400;
     line-height: 27px;
@@ -215,7 +217,8 @@ a {
 .gap-59 {
     gap: 59px;
 }
-.text-decoration-none{
+
+.text-decoration-none {
     text-decoration: none;
 }
 
@@ -230,7 +233,7 @@ a {
     border: 1px;
     opacity: 0px;
     border: 1px solid #00000033;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: var(--fs-18);
     font-weight: 400;
     line-height: 27px;
@@ -238,27 +241,6 @@ a {
     color: #000;
     padding-left: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* header-media-quary */
 @media(max-width:992px) {
@@ -310,31 +292,39 @@ a {
         margin-top: 19px;
     }
 
-    .ml-17 {
+    .ml-0-lg {
         margin-left: 0;
     }
 
     .mb-14 {
         margin-bottom: 14px;
     }
-    .input-btn{
+
+    .input-btn {
         display: none;
     }
-    .input-column{
+
+    .input-column {
         flex-direction: row !important;
         display: flex;
-        gap: 10px   ;
+        gap: 10px;
     }
-    .most-like{
+
+    .most-like {
         padding: 5px 12px;
         background-color: var(--light);
         border-radius: 25px;
         transition: all 300ms linear;
 
     }
-    .most-like:hover{
+
+    .most-like:hover {
         background-color: #000;
         color: white;
+    }
+
+    .ml-36 {
+        margin-left: 0;
     }
 
 }
@@ -348,7 +338,19 @@ a {
         width: 50px;
     }
 
+    .input-column {
+        flex-direction: column !important;
+    }
 
+    .img-width {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-width {
+        width: 40px;
+        height: 40px;
+    }
 
 
 

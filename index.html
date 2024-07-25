@@ -10,39 +10,41 @@
     <link rel="shortcut icon" href="assets/img/png/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/root.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
-    <header class="bg-sh p-3 text-decoration-none">
+    <header class="navbar-shadow position-fixed w-100 bg-white p-3 text-decoration-none">
         <nav>
-            <div class=" container  d-flex align-items-center justify-content-between">
+            <div class=" container d-flex align-items-center justify-content-between">
                 <div class="d-flex">
                     <div class="d-flex d-block d-lg-none">
                         <div class="menubar">
-                            <label for="iconbox">
-                                <span class="label">
-                                    <span class="line"></span>
-                                    <span class="line2"></span>
-                                    <span class="line3"></span>
-                                </span>
-                            </label>
                             <input type="checkbox" hidden id="iconbox">
+                            <label class="label" for="iconbox">
+
+                                <span class="navbar-line"></span>
+                                <span class="navbar-line-2"></span>
+                                <span class="navbar-line-3"></span>
+
+                            </label>
                             <ul class=" d-flex p-0 m-0 menu-list list-unstyled">
-                                <li><a href="" class="feed hover-black text-decoration-none">Feed</a></li>
-                                <li><a href="" class="wallet hover-black">Wallet</a></li>
+                                <li><a href="/" class="navbar-links hover-black text-decoration-none">Feed</a></li>
+                                <li><a href="/" class="navbar-links hover-black">Wallet</a></li>
                             </ul>
                         </div>
 
                     </div>
                     <div class="d-flex align-items-center justify-content-center ">
-                        <img src="./assets/img/png/logo.png" alt="logo" class="ms-2 ms-lg-0 logo-width">
+                        <img src="./assets/img/png/logo.png" alt="logo"
+                            class="ms-2 cursor-pointer ms-lg-0 logo-width logo-hight">
                         <div class="d-flex align-items-center justify-content-center gap-3">
-                            <p class="nft ms-lg-2 ms-1 mb-0">NFTsee</p>
-                         
+                            <p class="nft-logo ms-lg-2 cursor-pointer ms-1 mb-0">NFTsee</p>
+
                             <div>
                                 <ul class="d-flex mb-0 menu-list align-items-center gap-3">
-                                    <li class="text-decoration-none"><a href="" class="feed">feed</a></li>
-                                    <li class="text-decoration-none"><a href="" class="wallet">wallet</a></li>
+                                    <li class="text-decoration-none"><a href="/" class="navbar-links text-black ">feed</a></li>
+                                    <li class="text-decoration-none"><a href="/" class="navbar-links">wallet</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -64,124 +66,125 @@
                     <label for="toggle" class="toogle-btn">
                         <span class="button"></span>
                     </label>
-                    <img  src="assets/img/png/logo-profile.png" alt="header-img" class="img-width">
-                </div> 
+                    <img src="assets/img/png/logo-profile.png" alt="header-img"
+                        class="rigth-logo-width-hight cursor-pointer">
+                </div>
             </div>
         </nav>
     </header>
-    <section class="bg-color pt-5 overflow-hidden text-decoration-none">
+    <section class="bg-color pt-150 overflow-hidden text-decoration-none">
         <div class="container">
             <div class="row flex-column-reverse flex-lg-row">
-                <div class="col-lg-8 col-12 ">
-                    <div class="box h-100    border-color p-18 bg-white ">
+                <div class="mb-31 col-lg-8 col-12 ">
+                    <div class="box h-100   border-color p-4 bg-white ">
                         <div class="profile-header d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center gap-2">
                                 <a href="/">
                                     <img src="assets/img/png/profile-1.png" alt="profile-1">
                                 </a>
-                                <p class="mb-0 profile-name ">Jhone doe </p>
+                                <p class="mb-0 user-name ">Jhone doe </p>
                             </div>
                             <div class="dote-3">
                                 <a href="#">
-                                    <img src="assets/img/svg/3 dote.svg" alt="three">
+                                    <img src="assets/img/svg/menu-dote.svg" alt="three">
                                 </a>
                             </div>
                         </div>
                         <div class="img mt-5 ">
                             <img class="w-100" src="assets/img/png/post-1.png" alt="">
                             <div class="svg  mt-3">
-                                <img src="/assets/img/svg/like.svg" alt="liek">
-                                <img class="comment" src="assets/img/svg/com.svg" alt="comment">
+                                <img src="/assets/img/svg/like.svg" class="cursor-pointer" alt="liek">
+                                <img class="ml-21 cursor-pointer" src="assets/img/svg/com.svg" alt="comment">
                             </div>
-                            <div class="input-text mt-24 p-2 d-flex">
-                                <input class="w-100 input-comment" type="text" placeholder="Add a comment..." name=""
-                                    id="">
-                                <button class="post">Post</button>
+                            <div
+                                class="border-radus-22 border-1px-black max-width-891 w-100 border-1px-black border-radus-22 mt-24 p-2 d-flex">
+                                <input class="w-100 comment-text-box" type="text" placeholder="Add a comment...">
+                                <button class="post-btn">Post</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 ml-36 col-12">
-                    <div class="box-2 ">
-                        <p class="mb-3  fill">Filters</p>
+                <div class="col-lg-3 ms-0 ml-lg-36 col-12">
+                    <div>
+                        <p class="mb-3  hero-section-info">Filters</p>
                         <div class="input input-column   flex-column d-flex">
                             <div>
                                 <input class="input-btn" type="radio" name="most-lin" id="most-line">
-                                <label class="most-like" for="most-line">
+                                <label class="most-like-btn ms-lg-3 most-like-btn-active" for="most-line">
                                     Most Liked
                                 </label>
                             </div>
 
                             <div>
                                 <input class="input-btn" type="radio" name="most-lin" id="Recently-Received">
-                                <label class="most-like" for="Recently-Received">
+                                <label class="most-like-btn ms-lg-3" for="Recently-Received">
                                     Recently Received
                                 </label>
                             </div>
                         </div>
-                        <p class="mb-0 fill mt-39">Suggestions for you</p>
-                        <div class="follow-box overflow-auto gap-3 flex-row flex-lg-column d-flex mt-22">
-                            <div class="logo-profile d-lg-flex  justify-content-between  align-items-center ">
+                        <p class="mb-0 hero-section-info mt-39">Suggestions for you</p>
+                        <div class="w-100 overflow-auto gap-3 flex-row flex-lg-column d-flex mt-22">
+                            <div class="logo-profile mb-4 mb-lg-0 d-lg-flex  justify-content-between  align-items-center ">
                                 <div class="d-flex flex-lg-row flex-column align-items-center">
                                     <a class="text-decoration-none mt-19" href="#">
                                         <img src="assets/img/png/profile-follow-1.png" alt="profile-1">
                                     </a> <a class="text-decoration-none" href="#">
-                                        <p class="mb-0 follow-text ml-17 ml-0-lg">Jhone doe</p>
+                                        <p class="mb-0 user-name text-black ml-17 ml-0-lg">Jhone doe</p>
                                     </a>
                                 </div>
                                 <a class="text-decoration-none mb-14" href="#">Follow</a>
 
                             </div>
-                            <div class="logo-profile d-lg-flex justify-content-between  align-items-center ">
+                            <div class="logo-profile mb-4 mb-lg-0 d-lg-flex justify-content-between  align-items-center ">
                                 <div class="d-flex flex-lg-row flex-column align-items-center">
                                     <a class="text-decoration-none mt-19" href="#">
                                         <img src="assets/img/png/profile-follow-2.png" alt="profile-1">
                                     </a> <a class="text-decoration-none" href="#">
-                                        <p class="mb-0 follow-text ml-17 ml-0-lg">Jhone doe</p>
+                                        <p class="mb-0 user-name text-black ml-17 ml-0-lg">Jhone doe</p>
                                     </a>
                                 </div>
                                 <a class="text-decoration-none mb-14" href="#">Follow</a>
 
                             </div>
-                            <div class="logo-profile d-lg-flex justify-content-between  align-items-center ">
+                            <div class="logo-profile mb-4 mb-lg-0 d-lg-flex justify-content-between  align-items-center ">
                                 <div class="d-flex flex-lg-row flex-column  align-items-center">
                                     <a class="text-decoration-none mt-19" href="#">
                                         <img src="assets/img/png/profile-follow-3.png" alt="profile-1">
                                     </a> <a class="text-decoration-none" href="#">
-                                        <p class="mb-0 follow-text ml-17 ml-0-lg">Jhone doe</p>
+                                        <p class="mb-0 user-name text-black ml-17 ml-0-lg">Jhone doe</p>
                                     </a>
                                 </div>
                                 <a class="text-decoration-none mb-14" href="#">Follow</a>
 
                             </div>
-                            <div class="logo-profile d-lg-flex justify-content-between  align-items-center ">
+                            <div class="logo-profile mb-4 mb-lg-0 d-lg-flex justify-content-between  align-items-center ">
                                 <div class="d-flex flex-lg-row flex-column align-items-center">
                                     <a class="text-decoration-none mt-19" href="#">
                                         <img src="assets/img/png/profile-follow-4.png" alt="profile-1">
                                     </a> <a class="text-decoration-none" href="#">
-                                        <p class="mb-0 follow-text ml-17 ml-0-lg">Jhone doe</p>
+                                        <p class="mb-0 user-name text-black ml-17 ml-0-lg">Jhone doe</p>
                                     </a>
                                 </div>
                                 <a class="text-decoration-none mb-14" href="#">Follow</a>
 
                             </div>
-                            <div class="logo-profile d-lg-flex justify-content-between  align-items-center ">
+                            <div class="logo-profile mb-4 mb-lg-0 d-lg-flex justify-content-between  align-items-center ">
                                 <div class="d-flex flex-lg-row flex-column align-items-center">
                                     <a class="text-decoration-none mt-19" href="#">
                                         <img src="assets/img/png/profile-follow-5.png" alt="profile-1">
                                     </a> <a class="text-decoration-none" href="#">
-                                        <p class="mb-0 follow-text ml-17">Jhone doe</p>
+                                        <p class="mb-0 user-name text-black ml-17 ml-0-lg">Jhone doe</p>
                                     </a>
                                 </div>
                                 <a class="text-decoration-none mb-14" href="#">Follow</a>
 
                             </div>
-                            <div class="logo-profile d-lg-flex justify-content-between  align-items-center ">
+                            <div class="logo-profile mb-4 d-lg-flex justify-content-between  align-items-center ">
                                 <div class="d-flex flex-lg-row flex-column align-items-center">
                                     <a class="text-decoration-none mt-19" href="#">
                                         <img src="assets/img/png/profile-follow-6.png" alt="profile-1">
                                     </a> <a class="text-decoration-none" href="#">
-                                        <p class="mb-0 follow-text ml-17">Jhone doe</p>
+                                        <p class="mb-0 user-name text-black ml-17 ml-0-lg">Jhone doe</p>
                                     </a>
                                 </div>
                                 <a class="text-decoration-none mb-14" href="#">Follow</a>
@@ -189,86 +192,86 @@
                             </div>
                         </div>
                     </div>
+                    <p class="footer-text pt-4 d-none d-lg-flex">Copyright@2021</p>
                 </div>
             </div>
             <div class="row row-gap-2   ">
-                <div class="col-lg-8 col-12 ">
-                    <div class="box border-color bg-white p-18">
+                <div class="mb-31 col-lg-8 col-12 ">
+                    <div class="box border-color bg-white p-4">
                         <div class="profile-header d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center gap-2">
                                 <a href="/">
                                     <img src="assets/img/png/profile-2.png" alt="profile-1">
                                 </a>
-                                <p class="mb-0 profile-name ">Jhone doe </p>
+                                <p class="mb-0 user-name ">Jhone doe </p>
                             </div>
                             <div class="dote-3 d-flex justify-content-center">
 
                                 <a href="#">
-                                    <img class="" src="assets/img/svg/3 dote.svg" alt="three">
+                                    <img class="" src="assets/img/svg/menu-dote.svg" alt="three">
                                 </a>
                             </div>
                         </div>
                         <div class="img mt-5 ">
 
-                            <div class="max-width-889 d-flex align-items-center justify-content-center bg-color">
+                            <div
+                                class="max-width-889 w-100 border-1px-black d-flex align-items-center justify-content-center bg-color">
 
                                 <img class="w-100-lg" src="assets/img/png/post-2.png" alt="">
                             </div>
 
                             <div class="svg  mt-3">
-                                <img src="/assets/img/svg/like.svg" alt="liek">
-                                <img class="comment" src="assets/img/svg/com.svg" alt="comment">
+                                <img src="/assets/img/svg/like.svg" class="cursor-pointer" alt="liek">
+                                <img class="ml-21 cursor-pointer" src="assets/img/svg/com.svg" alt="comment">
                             </div>
-                            <div class="input-text mt-24 p-2 d-flex">
-                                <input class="w-100 input-comment" type="text" placeholder="Add a comment..." name=""
-                                    id="">
-                                <button class="post">Post</button>
+                            <div class=" border-1px-black border-radus-22 mt-24 p-2 d-flex">
+                                <input class="w-100 comment-text-box" type="text" placeholder="Add a comment...">
+                                <button class="post-btn">Post</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-12">
-                    <div class="box p-18 border-color bg-white">
+                <div class="mb-31 col-lg-8 col-12">
+                    <div class="box p-4 border-color bg-white">
                         <div class="profile-header d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center gap-2">
                                 <a href="/">
                                     <img src="assets/img/png/profile-3.png" alt="profile-1">
                                 </a>
-                                <p class="mb-0 profile-name ">Jhone doe </p>
+                                <p class="mb-0 user-name ">Jhone doe </p>
                             </div>
                             <div class="dote-3">
                                 <a href="#">
-                                    <img src="assets/img/svg/3 dote.svg" alt="three">
+                                    <img src="assets/img/svg/menu-dote.svg" alt="three">
                                 </a>
                             </div>
                         </div>
                         <div class="img mt-5 ">
                             <img class="w-100" src="assets/img/png/post-3.png" alt="">
                             <div class="svg  mt-3">
-                                <img src="/assets/img/svg/like.svg" alt="liek">
-                                <img class="comment" src="assets/img/svg/com.svg" alt="comment">
+                                <img src="/assets/img/svg/like.svg" class="cursor-pointer" alt="liek">
+                                <img class="ml-21 cursor-pointer" src="assets/img/svg/com.svg" alt="comment">
                             </div>
-                            <div class="input-text mt-24 p-2 d-flex">
-                                <input class="w-100 input-comment" type="text" placeholder="Add a comment..." name=""
-                                    id="">
-                                <button class="post">Post</button>
+                            <div class="border-1px-black border-radus-22 mt-24 p-2 d-flex">
+                                <input class="w-100 comment-text-box" type="text" placeholder="Add a comment...">
+                                <button class="post-btn">Post</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-12 ">
-                    <div class="box p-18 border-color bg-white">
+                <div class="mb-31 col-lg-8 col-12 ">
+                    <div class="box p-4 border-color bg-white">
                         <div class="profile-header d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center gap-2">
                                 <a href="/">
                                     <img src="assets/img/png/profile-4.png" alt="profile-1">
                                 </a>
-                                <p class="mb-0 profile-name ">Jhone doe </p>
+                                <p class="mb-0 user-name ">Jhone doe </p>
                             </div>
                             <div class="dote-3 d-flex justify-content-center">
 
                                 <a href="#">
-                                    <img class="" src="assets/img/svg/3 dote.svg" alt="three">
+                                    <img class="" src="assets/img/svg/menu-dote.svg" alt="three">
                                 </a>
                             </div>
                         </div>
@@ -280,20 +283,19 @@
                             </div>
 
                             <div class="svg  mt-3">
-                                <img src="/assets/img/svg/like.svg" alt="liek">
-                                <img class="comment" src="assets/img/svg/com.svg" alt="comment">
+                                <img src="/assets/img/svg/like.svg" class="cursor-pointer" alt="liek">
+                                <img class="ml-21 cursor-pointer" src="assets/img/svg/com.svg" alt="comment">
                             </div>
-                            <div class="input-text mt-24 p-2 d-flex">
-                                <input class="w-100 input-comment" type="text" placeholder="Add a comment..." name=""
-                                    id="">
-                                <button class="post">Post</button>
+                            <div class="border-1px-black border-radus-22 mt-24 p-2 d-flex">
+                                <input class="w-100 comment-text-box" type="text" placeholder="Add a comment...">
+                                <button class="post-btn">Post</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
